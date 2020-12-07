@@ -2,15 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
 
 :root {
-  --modal-duration: 1s;
-  /* --primary-color: #339694;
-  --secondary-color: #2b7be4; */
-  --primary-color: rgba(57, 107, 156, 0.75);
-  --secondary-color: #333333;
+  --primary-color: rgb(5, 56, 107);
+  --links-btn-color: rgb(55, 150, 131, 0.9);
+  --secondary-color: rgb(92, 219, 149);
   --menu-speed: 0.75s;
   --overlay-color: rgba(24, 39, 51, 0.9);
   --hover-color: rgba(44, 111, 178, 0.65);
   --mainTransition: all 0.3s linear;
+  --modal-duration: 1s;
 }
 
 * {
@@ -24,11 +23,16 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   line-height: 1.4;
   transition: transform 0.3s ease;
-  background: #fff;
+  background: var(--secondary-color);
 }
 
 a {
   text-decoration: none;
+  color: var(--primary-color) !important;
+}
+
+.ext-links {
+  color: var(--primary-color) !important;
 }
 
 /* Navbar */
@@ -36,18 +40,17 @@ a {
   position: sticky;
   top: 0;
   z-index: 2;
+  background: var(--secondary-color);
 }
 
 #navbar .container {
   display: flex;
   position: sticky;
   top: 0;
-  background: #fff;
-  color: var(--primary-color);
   justify-content: space-between;
-  z-index: 1;
   padding: 1rem;
   height: 60px;
+  background: var(--secondary-color);
 }
 
 #navbar ul {
@@ -57,7 +60,12 @@ a {
 }
 
 #navbar #home-link {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  padding: 0 0.5rem;
+}
+
+.container .social .fab {
   color: var(--primary-color);
 }
 
@@ -68,7 +76,7 @@ a {
 }
 
 #navbar ul li a:hover {
-  background: var(--hover-color);
+  background: var(--links-btn-color);
   border-radius: 5px;
   color: #fff;
 }
@@ -78,16 +86,20 @@ a {
 }
 
 #navbar .social i {
-  color: #333;
   margin-right: 0.5rem;
 }
 
 /* heading */
 #header {
   min-height: calc(100vh - 60px);
+  max-width: 1100px;
+  margin: 2rem;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.2rem;
+  color: #fff;
 }
 
 /* projects */
@@ -115,16 +127,16 @@ a {
 .project-container {
   position: relative;
   overflow: hidden;
-  display: block;
+  /* display: block;
   width: 100%;
-  min-height: 12rem;
+  min-height: 12rem; */
 }
 
 .links-btn1,
 .links-btn2 {
   position: absolute;
   right: 0;
-  background: var(--primary-color);
+  background: var(--links-btn-color);
   border: none;
   /* text-transform: uppercase; */
   padding: 0.5rem 0.75rem;
@@ -132,7 +144,12 @@ a {
   transition: var(--mainTransition);
   transform: translateX(101%);
   cursor: pointer;
-  color: #333;
+  color: #fff;
+}
+
+.links-btn1 a,
+.links-btn2 a {
+  color: #fff;
 }
 
 .links-btn1 {
@@ -141,11 +158,6 @@ a {
 
 .links-btn2 {
   top: 70%;
-}
-
-.links-btn1:hover,
-.links-btn2:hover {
-  color: #fff;
 }
 
 .fa-github,
@@ -165,7 +177,7 @@ a {
   transition: var(--mainTransition);
 }
 
-.project-container:hover .product-img {
+.project-container:hover .project-img {
   opacity: 0.5;
 }
 
@@ -173,7 +185,7 @@ a {
 .about-head h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .about p {
@@ -187,25 +199,96 @@ a {
 .technologies-head h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .technologies ul {
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
   max-width: 1170px;
   margin-bottom: 4rem;
   list-style-type: none;
   text-align: center;
+  display: flex;
+  color: #333;
+}
+
+.technologies ul li {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.technologies .fas,
+.technologies .fab {
+  margin-right: 0.5rem;
 }
 
 /* links */
 .links-head h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .links .social {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  margin-bottom: 4rem;
   text-align: center;
+  display: flex;
+}
+
+.links .social a {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  color: #333;
+  /* display: block;
+  margin: auto; */
+  /* width: 50%; */
+}
+
+/* contact form */
+#contact {
+  display: flex;
+}
+
+#contact .contact-form {
+  flex: 1;
+  flex-basis: 50%;
+  background: var(--primary-color);
+  padding: 2rem;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.form-btn {
+  display: inline-block;
+  color: #fff;
+  background: #333;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* footer */
+.footer {
+  background: var(--links-btn-color);
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--primary-color);
 }

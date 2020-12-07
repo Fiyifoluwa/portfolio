@@ -7,6 +7,16 @@ window.addEventListener('scroll', function(){
     }
 });
 
+// // random image
+window.onload = choosePic;
+
+var images = new Array("images/random1.png", "images/random2.png", "images/random3.png", "images/random4.png", "images/random5.png", "images/random6.png", "images/random7.png", "images/random8.png", "images/random9.png");
+
+function choosePic(){
+    var randomNum = Math.floor(Math.random() * images.length);
+    document.getElementById("random-image").src = images[randomNum];
+}
+
 // Smooth scrolling
 $('#navbar a, .btn').on('click', function(event){
     if(this.hash !== ''){
