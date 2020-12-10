@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://kit.fontawesome.com/0096b5fa23.js" crossorigin="anonymous"></script>
-          <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
-          <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/menu.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -14,7 +13,6 @@
 <body id="home">
   <!-- navbar -->
   <nav id="navbar" class="navbar">
-    <div class="container">
       <h1 class="logo"><a href="#home" id="home-link"> Fiyifoluwa </h1></a>
       <div class="social">
         <a href="https://linkedin.com/in/fiyidimeji"><i class="fab fa-linkedin fa-2x ext-links"></i></a>
@@ -22,40 +20,21 @@
         <a href="https://twitter.com/fiyi_oladimeji"><i class="fab fa-twitter fa-2x ext-links"></i></a>
       </div>
 
-      <ul class="hide-in-mobile">
+      <ul>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
   </nav>
-
-  <!-- hamburger menu for mobile -->
-  <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger">
-      <div></div>
-    </div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- header -->
   <header id="header" class="header">  
-    <div class="container">
-      <img src="images/random1.png" alt="me" id="random-image">
+    <div class="container header-container">
+      <img src="" alt="me" id="random-image">
       <br>
-      <h1 class="intro-head">Hello, I'm Fiyifoluwa!</h1>
-      <p class="intro">Front-end Developer. Packaging up the utility of back-end code in an aesthetic way.</p>
+      <br>
+      <h1 class="l-heading">Hello, I'm Fiyifoluwa!</h1>
+      <p class="lead">Front-end Developer. Packaging up the utility of back-end code in an aesthetic way.</p>
       <a href = "mailto: fiyifoluwa@outlook.com">E-mail me!</a>
     </div>
   </header>
@@ -63,7 +42,7 @@
   <!-- Projects -->
   <section id="projects" class="projects">
     <div class="projects-head">
-      <h2 id="projects-title">Projects</h2>
+      <h1 id="projects-title">Projects</h1>
     </div>
 
     <div class="projects-container">
@@ -74,7 +53,7 @@
             <a href="https://github.com/Fiyifoluwa/ComfyHouse-by-Fiyi"><i class="fas fa fa-github"></i>View Code</a>
           </button>
           <button class="links-btn2">
-            <a href="https://fiyifoluwa.github.io/ComfyHouse-by-Fiyi/"><p>View Website</p></a>
+            <a href="https://fiyifoluwa.github.io/ComfyHouse-by-Fiyi/">View Website</a>
           </button>
         </div>
       </article>
@@ -86,7 +65,7 @@
             <a href="#"><i class="fas fa fa-lock"></i>Cannot View Code</a>
           </button>
           <button class="links-btn2">
-            <a href="https://githubfinderbyfiyi.netlify.app/"><p>View Website</p></a>
+            <a href="https://githubfinderbyfiyi.netlify.app/">View Website</a>
           </button>
         </div>
       </article>
@@ -98,7 +77,7 @@
             <a href="https://github.com/Fiyifoluwa/new-year-countdown/"><i class="fas fa fa-github"></i>View Code</a>
           </button>
           <button class="links-btn2">
-            <a href="https://fiyifoluwa.github.io/new-year-countdown/"><p>View Website</p></a>
+            <a href="https://fiyifoluwa.github.io/new-year-countdown/">View Website</a>
           </button>
         </div>
       </article>
@@ -110,7 +89,7 @@
             <a href="https://github.com/Fiyifoluwa/infinite-scroll/"><i class="fas fa fa-github"></i>View Code</a>
           </button>
           <button class="links-btn2">
-            <a href="https://fiyifoluwa.github.io/infinite-scroll/"><p>View Website</p></a>
+            <a href="https://fiyifoluwa.github.io/infinite-scroll/">View Website</a>
           </button>
         </div>
       </article>
@@ -122,7 +101,7 @@
             <a href="https://github.com/Fiyifoluwa/popup-and-slider"><i class="fas fa fa-github"></i>View Code</a>
           </button>
           <button class="links-btn2">
-            <a href="https://fiyifoluwa.github.io/popup-and-slider/"><p>View Website</p></a>
+            <a href="https://fiyifoluwa.github.io/popup-and-slider/">View Website</a>
           </button>
         </div>
       </article>
@@ -132,7 +111,7 @@
   <!-- about -->
   <section class="about" id="about">
     <div class="about-head">
-      <h2 class="about-title">About</h2>
+      <h1 class="m-heading">About</h1>
     </div>
 
     <p>
@@ -140,39 +119,23 @@
     </p>
   </section>
 
-  <!-- technologies -->
-  <section class="technologies">
-    <div class="technologies-head">
-      <h2 class="technologies-title">Technologies</h2>
-    </div>
-
-    <ul>
-      <li><i class="fas fa fa-4x fa-html5 ext-links"></i></li>
-      <li><i class="fas fa fa-4x fa-css3 ext-links"></i></li>
-      <li><i class="fab fa-4x fa-js ext-links"></i></li>
-      <li><i class="fab fa-4x fa-react ext-links"></i></li>
-    </ul>
-  </section>
-
   <!-- Links -->
   <section class="links" id="links">
-    <div class="container">
-      <div class="links-head">
-        <h2 class="links-title">Links</h2>
-      </div>
+    <div class="links-container">
+      <h1 class="m-heading">Links</h1>
 
       <div class="social">
-        <a href="https://linkedin.com/in/fiyidimeji"><i class="fab fa-linkedin fa-4x"></i></a>
-        <a href="https://github.com/Fiyifoluwa"><i class="fab fa-github fa-4x"></i></a>
-        <a href="https://twitter.com/fiyi_oladimeji"><i class="fab fa-twitter fa-4x"></i></a>
+        <a href="https://linkedin.com/in/fiyidimeji"><i class="fab fa-linkedin fa-4x ext-links"></i></a>
+        <a href="https://github.com/Fiyifoluwa"><i class="fab fa-github fa-4x ext-links"></i></a>
+        <a href="https://twitter.com/fiyi_oladimeji"><i class="fab fa-twitter fa-4x ext-links"></i></a>
         <a href="#"><i class="fas fa-file fa-4x ext-links"></i></a>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- footer (with contact form?) -->
   <footer id="main-footer" class="footer">
-    <div class="container">
+    <div class="footer-container">
       <p>Copyright &copy; 2020 Fiyi Oladimeji</p>
     </div>
   </footer>
