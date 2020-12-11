@@ -129,18 +129,16 @@ p {
 
 .header-container {
   min-height: calc(100vh - 60px);
-  /* display: flex; */
   text-align: left;
-  /* flex-direction: column; */
   height: 100%;
-  /* align-items: center;
-  justify-content: left; */
+  align-items: left;
+  justify-content: center;
   color: #edf5e1;
 }
 
 .header-container img {
-  /* width: 50%;
-  height: 50%; */
+  width: 50%;
+  height: 50%;
 }
 
 /* projects */
