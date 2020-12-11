@@ -2,8 +2,6 @@
   #navbar {
     flex-direction: column;
     align-items: center;
-    /* height: 120px; */
-    background: var(--secondary-color);
   }
 
   #navbar .social {
@@ -20,7 +18,7 @@
   }
 
   .header-container {
-    text-align: center;
+    text-align: left;
   }
 
   .header-container h1 {
