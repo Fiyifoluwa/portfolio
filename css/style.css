@@ -146,7 +146,7 @@ p {
   height: 50%;
 }
 
-.woble:hover{
+.wobble:hover{
   animation: animationFrames linear 1s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;

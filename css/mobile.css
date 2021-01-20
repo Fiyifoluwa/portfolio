@@ -41,7 +41,7 @@
     font-size: 1.3rem !important;
   }
 
-  .woble{
+  .wobble{
   animation: animationFrames linear 1s;
   animation-iteration-count: 3;
   transform-origin: 50% 50%;
