@@ -10,7 +10,21 @@ window.addEventListener('scroll', function(){
 // // random image
 window.onload = choosePic;
 
-var images = new Array("images/random1.png", "images/random2.png", "images/random3.png", "images/random4.png", "images/random5.png", "images/random6.png", "images/random7.png", "images/random8.png", "images/random9.png", "images/random10.png", "images/random11.png", "images/random12.png", "images/random13.png");
+var images = new Array(
+  'images/random1.png',
+  'images/random2.png',
+  'images/random3.png',
+  'images/random4.png',
+  'images/random5.png',
+  'images/random6.png',
+  'images/random7.png',
+  'images/random8.png',
+  'images/random9.png',
+  'images/random10.png',
+  'images/random11.png',
+  'images/random12.png',
+  'images/random13.png'
+);
 
 function choosePic(){
     var randomNum = Math.floor(Math.random() * images.length);
