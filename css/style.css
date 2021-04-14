@@ -18,7 +18,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   background: var(--secondary-color);
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
-  background: linear-gradient(to right, #38ef7d, #11998e); 
+  background: linear-gradient(to right, #38ef7d, #11998e);
 }
 
 a {
@@ -146,7 +146,7 @@ p {
   height: 50%;
 }
 
-.wobble:hover{
+.wobble:hover {
   animation: animationFrames linear 1s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
@@ -155,51 +155,51 @@ p {
   -webkit-transform-origin: 50% 50%;
 }
 
-@keyframes animationFrames{
+@keyframes animationFrames {
   0% {
-    transform:  translate(0px,0px)  rotate(0deg) ;
+    transform: translate(0px, 0px) rotate(0deg);
   }
   15% {
-    transform:  translate(-25px,0px)  rotate(-5deg) ;
+    transform: translate(-25px, 0px) rotate(-5deg);
   }
   30% {
-    transform:  translate(20px,0px)  rotate(3deg) ;
+    transform: translate(20px, 0px) rotate(3deg);
   }
   45% {
-    transform:  translate(-15px,0px)  rotate(-3deg) ;
+    transform: translate(-15px, 0px) rotate(-3deg);
   }
   60% {
-    transform:  translate(10px,0px)  rotate(2deg) ;
+    transform: translate(10px, 0px) rotate(2deg);
   }
   75% {
-    transform:  translate(-5px,0px)  rotate(-1deg) ;
+    transform: translate(-5px, 0px) rotate(-1deg);
   }
   100% {
-    transform:  translate(0px,0px)  rotate(0deg) ;
+    transform: translate(0px, 0px) rotate(0deg);
   }
 }
 
 @-webkit-keyframes animationFrames {
   0% {
-    -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
   }
   15% {
-    -webkit-transform:  translate(-25px,0px)  rotate(-5deg) ;
+    -webkit-transform: translate(-25px, 0px) rotate(-5deg);
   }
   30% {
-    -webkit-transform:  translate(20px,0px)  rotate(3deg) ;
+    -webkit-transform: translate(20px, 0px) rotate(3deg);
   }
   45% {
-    -webkit-transform:  translate(-15px,0px)  rotate(-3deg) ;
+    -webkit-transform: translate(-15px, 0px) rotate(-3deg);
   }
   60% {
-    -webkit-transform:  translate(10px,0px)  rotate(2deg) ;
+    -webkit-transform: translate(10px, 0px) rotate(2deg);
   }
   75% {
-    -webkit-transform:  translate(-5px,0px)  rotate(-1deg) ;
+    -webkit-transform: translate(-5px, 0px) rotate(-1deg);
   }
   100% {
-    -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
   }
 }
 
@@ -267,6 +267,8 @@ p {
 
 .project-img {
   display: block;
+  max-width: 324px;
+  max-height: 141.75px;
   width: 100%;
   min-height: 12rem;
   transition: var(--mainTransition);
