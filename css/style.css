@@ -215,7 +215,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   column-gap: 1.5rem;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
 }
 
 /* single project */
@@ -270,7 +270,7 @@ p {
   max-width: 324px;
   max-height: 141.75px;
   width: 100%;
-  min-height: 12rem;
+  /* min-height: 12rem; */
   transition: var(--mainTransition);
 }
 
