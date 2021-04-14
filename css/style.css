@@ -268,7 +268,7 @@ p {
 .project-img {
   display: block;
   max-width: 324px;
-  max-height: 141.75px;
+  height: 161.19px;
   width: 100%;
   /* min-height: 12rem; */
   transition: var(--mainTransition);
