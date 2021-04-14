@@ -222,6 +222,7 @@ p {
 .project-container {
   position: relative;
   overflow: hidden;
+  max-width: 324px;
   /* display: block;
   width: 100%;
   min-height: 12rem; */
@@ -233,6 +234,7 @@ p {
   right: 0;
   background: var(--links-btn-color);
   border: none;
+  border-radius: 1px;
   /* text-transform: uppercase; */
   padding: 0.5rem 0.75rem;
   font-weight: bold;
@@ -248,7 +250,7 @@ p {
 }
 
 .links-btn1 {
-  top: 50%;
+  top: 45%;
 }
 
 .links-btn2 {
