@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap");
 
 :root {
   --primary-color: rgb(5, 56, 107);
@@ -15,7 +16,8 @@
 }
 
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  /* font-family: "Kumbh Sans", sans-serif; */
+  font-family: "Inter", sans-serif;
   background: var(--secondary-color);
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
   background: linear-gradient(to right, #38ef7d, #11998e);
@@ -98,6 +100,7 @@ p {
 }
 
 #navbar #home-link {
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 2rem;
   color: var(--primary-color);
   padding: 0 0.5rem;
@@ -130,6 +133,7 @@ p {
 /* heading */
 .header {
   top: 200px;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .header-container {
@@ -142,8 +146,7 @@ p {
 }
 
 .header-container img {
-  width: 50%;
-  height: 50%;
+  width: 40%;
 }
 
 .wobble:hover {
@@ -237,6 +240,7 @@ p {
   border-radius: 1px;
   /* text-transform: uppercase; */
   padding: 0.5rem 0.75rem;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   transition: var(--mainTransition);
   transform: translateX(101%);
