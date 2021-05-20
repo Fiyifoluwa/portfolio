@@ -21,6 +21,10 @@
     text-align: left;
   }
 
+  .header-container img {
+    width: 60%;
+  }
+
   .header-container h1 {
     font-size: 2rem;
   }
@@ -34,7 +38,7 @@
   }
 
   .m-heading {
-    padding-top: 2.5rem !important;
+    padding-top: 1.5rem !important;
   }
 
   .projects,
